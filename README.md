@@ -87,19 +87,15 @@ A morphing effect when a shape is draged from its position, Developed using Swif
    git clone https://github.com/Mobile-Apps-Academy/OpenFasionEcommerceSwiftUIApp.git
    ```
 ### Usage
-    
-    
+
     ```sh
-     
-    SideView(isShowing: $presentSideMenu, direction: .leading) { // presentSideMenu is state bool
-       SideMenuViewContents(presentSideMenu: $presentSideMenu)
-          .frame(width: 300)
-    }
-    
+SideView(isShowing: $presentSideMenu, direction: .leading) { // presentSideMenu is state bool
+   SideMenuViewContents(presentSideMenu: $presentSideMenu)
+       .frame(width: 300)
+}
    ```
    
    ```sh
-     
 struct SideMenuViewContents: View {
     @Binding var presentSideMenu: Bool
     
@@ -139,7 +135,6 @@ struct SideMenuViewContents: View {
     }
 }
 
-    
    ```
    
 
