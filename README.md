@@ -114,6 +114,8 @@ struct SideMenuViewContents: View {
             .background(.gray)
         }
     }
+    ```
+    ```
     func SideMenuTopView() -> some View {
         VStack {
             HStack {
@@ -137,7 +139,7 @@ struct SideMenuViewContents: View {
 }
    ```
    
-
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
