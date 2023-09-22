@@ -88,17 +88,18 @@ A morphing effect when a shape is draged from its position, Developed using Swif
    ```
 ### Usage
 
-1. How to create the side view 
-    ```
+1. How to create the side view
+
+```swift
 SideView(isShowing: $presentSideMenu, direction: .leading) { // presentSideMenu is state bool
    SideMenuViewContents(presentSideMenu: $presentSideMenu)
        .frame(width: 300)
 }
-   ```
+```
 
 2. How to create the content view
 
-   ```
+```swift
 struct SideMenuViewContents: View {
     @Binding var presentSideMenu: Bool
     var body: some View {
@@ -114,8 +115,7 @@ struct SideMenuViewContents: View {
             .background(.gray)
         }
     }
-    ```
-    ```
+    
     func SideMenuTopView() -> some View {
         VStack {
             HStack {
@@ -136,9 +136,7 @@ struct SideMenuViewContents: View {
         .padding(.top, 40)
         .padding(.bottom, 30)
     }
-}
-   ```
-   
+}  
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
