@@ -88,13 +88,17 @@ A morphing effect when a shape is draged from its position, Developed using Swif
    ```
 ### Usage
 
+1. How to create the side view 
+
     ```sh
 SideView(isShowing: $presentSideMenu, direction: .leading) { // presentSideMenu is state bool
    SideMenuViewContents(presentSideMenu: $presentSideMenu)
        .frame(width: 300)
 }
    ```
-   
+
+2. How to create the content view
+
    ```sh
 struct SideMenuViewContents: View {
     @Binding var presentSideMenu: Bool
@@ -134,7 +138,6 @@ struct SideMenuViewContents: View {
         .padding(.bottom, 30)
     }
 }
-
    ```
    
 
@@ -188,4 +191,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [Twitter]: https://img.shields.io/badge/twitter-696969?style=for-the-badge&logo=twitter&logoColor=white
 [Twitter-url]: https://twitter.com/MobileAppsAcdmy
 
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/screenshot.gif
