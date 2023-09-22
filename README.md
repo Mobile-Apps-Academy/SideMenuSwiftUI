@@ -90,7 +90,7 @@ A morphing effect when a shape is draged from its position, Developed using Swif
 
 1. How to create the side view 
 
-    ```sh
+    ```swift
 SideView(isShowing: $presentSideMenu, direction: .leading) { // presentSideMenu is state bool
    SideMenuViewContents(presentSideMenu: $presentSideMenu)
        .frame(width: 300)
@@ -99,7 +99,7 @@ SideView(isShowing: $presentSideMenu, direction: .leading) { // presentSideMenu 
 
 2. How to create the content view
 
-   ```sh
+   ```swift
 struct SideMenuViewContents: View {
     @Binding var presentSideMenu: Bool
     
